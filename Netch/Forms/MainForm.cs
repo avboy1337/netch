@@ -322,27 +322,27 @@ public partial class MainForm : Form
 
     private async void CheckForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
     {
-        void OnNewVersionNotFound(object? o, EventArgs? args)
-        {
-            NotifyTip(i18N.Translate("Already latest version"));
-        }
+        //void OnNewVersionNotFound(object? o, EventArgs? args)
+        //{
+        //    NotifyTip(i18N.Translate("Already latest version"));
+        //}
 
-        void OnNewVersionFoundFailed(object? o, EventArgs? args)
-        {
-            NotifyTip(i18N.Translate("Check for update failed"), info: false);
-        }
+        //void OnNewVersionFoundFailed(object? o, EventArgs? args)
+        //{
+        //    NotifyTip(i18N.Translate("Check for update failed"), info: false);
+        //}
 
-        try
-        {
-            UpdateChecker.NewVersionNotFound += OnNewVersionNotFound;
-            UpdateChecker.NewVersionFoundFailed += OnNewVersionFoundFailed;
-            await CheckUpdateAsync();
-        }
-        finally
-        {
-            UpdateChecker.NewVersionNotFound -= OnNewVersionNotFound;
-            UpdateChecker.NewVersionFoundFailed -= OnNewVersionFoundFailed;
-        }
+        //try
+        //{
+        //    UpdateChecker.NewVersionNotFound += OnNewVersionNotFound;
+        //    UpdateChecker.NewVersionFoundFailed += OnNewVersionFoundFailed;
+        //    await CheckUpdateAsync();
+        //}
+        //finally
+        //{
+        //    UpdateChecker.NewVersionNotFound -= OnNewVersionNotFound;
+        //    UpdateChecker.NewVersionFoundFailed -= OnNewVersionFoundFailed;
+        //}
     }
 
     private void OpenDirectoryToolStripMenuItem_Click(object sender, EventArgs e)
@@ -414,7 +414,7 @@ public partial class MainForm : Form
 
     private void VersionLabel_Click(object sender, EventArgs e)
     {
-        Utils.Utils.Open($"https://github.com/{UpdateChecker.Owner}/{UpdateChecker.Repo}/releases");
+        //Utils.Utils.Open($"https://github.com/{UpdateChecker.Owner}/{UpdateChecker.Repo}/releases");
     }
 
     private async void NewVersionLabel_Click(object sender, EventArgs e)
@@ -509,7 +509,7 @@ public partial class MainForm : Form
 
     private void fAQToolStripMenuItem_Click(object sender, EventArgs e)
     {
-        Utils.Utils.Open("https://docs.netch.org");
+        //Utils.Utils.Open("https://docs.netch.org");
     }
 
     #endregion

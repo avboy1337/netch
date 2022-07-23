@@ -87,7 +87,7 @@ public class PcapController : Guard, IModeController
             Task.Run(() =>
                 {
                     Thread.Sleep(1000);
-                    Utils.Utils.Open("https://github.com/zhxie/pcap2socks#dependencies");
+                    //Utils.Utils.Open("https://github.com/zhxie/pcap2socks#dependencies");
                 })
                 .Forget();
 

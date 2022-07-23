@@ -10,6 +10,5 @@ public class GitHubRelease
         _owner = owner;
         _repo = repo;
     }
-
     public string AllReleaseUrl => $@"https://api.github.com/repos/{_owner}/{_repo}/releases";
 }

@@ -53,7 +53,6 @@ public class SyncGlobalCheckBox : CheckBox
         Checked = !Checked;
         base.OnClick(e);
     }
-
     public bool? Value
     {
         get => _syncGlobal ? null : Checked;
@@ -70,7 +69,6 @@ public class SyncGlobalCheckBox : CheckBox
             }
         }
     }
-
     private void OnSyncGlobalChanged()
     {
         if (_syncGlobal)
